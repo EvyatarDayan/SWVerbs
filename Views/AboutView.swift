@@ -14,13 +14,13 @@ struct AboutView: View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
-                    // About SWVerbs Section
+                    // About SW-Verbs Section
                     VStack(alignment: .leading, spacing: 12) {
-                        Text("About SWVerbs")
+                        Text("About SW-Verbs")
                             .font(.title2)
                             .fontWeight(.bold)
                         
-                        Text("SWVerbs is a comprehensive Swedish verb learning app designed to help you master Swedish verbs with ease. Practice verb conjugations, test your knowledge, and track your progress. Learn verb forms in present, past, and perfect tenses with accurate translations and example sentences. Never miss a learning opportunity again.")
+                        Text("SW-Verbs is a comprehensive Swedish verb learning app designed to help you master Swedish verbs with ease. Practice verb conjugations, test your knowledge, and track your progress. Learn verb forms in present, past, and perfect tenses with accurate translations and example sentences. Never miss a learning opportunity again.")
                             .font(.body)
                             .multilineTextAlignment(.leading)
                     }

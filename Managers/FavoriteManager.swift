@@ -1,6 +1,6 @@
 //
 //  FavoriteManager.swift
-//  SWVerbs
+//  SW-Verbs
 //
 //  Created by EVYATAR DAYAN on 2026-01-05.
 //

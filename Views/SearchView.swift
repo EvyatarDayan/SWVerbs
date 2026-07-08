@@ -82,7 +82,7 @@ struct SearchView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    SplitTitleView("SWVerbs", splitIndex: 7)
+                    SplitTitleView("All Verbs", splitIndex: 7)
                 }
             }
             .sheet(item: $selectedVerb) { verb in
@@ -145,6 +145,7 @@ struct VerbRow: View {
             }) {
                 Image("audio-headphone")
                     .resizable()
+                    .renderingMode(.template)
                     .scaledToFit()
                     .frame(width: 28, height: 28)
                     .opacity(isPlaying ? 0.5 : 1.0)
@@ -152,7 +153,7 @@ struct VerbRow: View {
                         isPlaying ? Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true) : .default,
                         value: isPlaying
                     )
-                    .foregroundColor(.blue)
+                    .foregroundColor(.appRed)
             }
             .buttonStyle(.plain)
             
@@ -162,7 +163,7 @@ struct VerbRow: View {
                 Text(verb.infinitive)
                     .font(.title2)
                     .fontWeight(.medium)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.appRed)
                 
                 if !verb.english.isEmpty && verb.english[0] != "translation" {
                     Text(verb.english.joined(separator: ", "))
@@ -179,9 +180,10 @@ struct VerbRow: View {
             }) {
                 Image("play-button")
                     .resizable()
+                    .renderingMode(.template)
                     .scaledToFit()
                     .frame(width: 37, height: 37)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.appRed)
             }
             .buttonStyle(.plain)
         }

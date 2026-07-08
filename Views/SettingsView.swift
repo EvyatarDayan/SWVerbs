@@ -36,7 +36,7 @@ struct SettingsView: View {
                                 Circle()
                                     .fill(
                                         LinearGradient(
-                                            gradient: Gradient(colors: [Color.purple, Color.purple.opacity(0.7)]),
+                                            gradient: Gradient(colors: [Color.appRed, Color.appRed.opacity(0.7)]),
                                             startPoint: .topLeading,
                                             endPoint: .bottomTrailing
                                         )
@@ -76,7 +76,7 @@ struct SettingsView: View {
                                 Circle()
                                     .fill(
                                         LinearGradient(
-                                            gradient: Gradient(colors: [Color.orange, Color.orange.opacity(0.7)]),
+                                            gradient: Gradient(colors: [Color.appRed, Color.appRed.opacity(0.7)]),
                                             startPoint: .topLeading,
                                             endPoint: .bottomTrailing
                                         )
@@ -136,7 +136,7 @@ struct SettingsView: View {
                 Section(header: Text("LEARNING")) {
                     SettingsRow(
                         icon: "lightbulb.fill",
-                        iconColor: .yellow,
+                        iconColor: .appRed,
                         title: "Learning Tips",
                         description: "Effective learning strategies"
                     ) {
@@ -148,7 +148,7 @@ struct SettingsView: View {
                 Section(header: Text("CLEAR DATA")) {
                     SettingsRow(
                         icon: "trash.fill",
-                        iconColor: .red,
+                        iconColor: .appRed,
                         title: "Clear Tests",
                         description: "Delete all saved tests"
                     ) {
@@ -157,7 +157,7 @@ struct SettingsView: View {
                     
                     SettingsRow(
                         icon: "heart.slash.fill",
-                        iconColor: .red,
+                        iconColor: .appRed,
                         title: "Clear Favorites",
                         description: "Remove all favorited verbs"
                     ) {
@@ -169,7 +169,7 @@ struct SettingsView: View {
                 Section(header: Text("SUPPORT")) {
                     SettingsRow(
                         icon: "questionmark.circle.fill",
-                        iconColor: .blue,
+                        iconColor: .appRed,
                         title: "Help & Support",
                         description: "Get help and contact support"
                     ) {
@@ -178,7 +178,7 @@ struct SettingsView: View {
                     
                     SettingsRow(
                         icon: "lock.fill",
-                        iconColor: .green,
+                        iconColor: .appRed,
                         title: "Terms & Privacy",
                         description: "View terms and privacy policy"
                     ) {
@@ -187,7 +187,7 @@ struct SettingsView: View {
                     
                     SettingsRow(
                         icon: "info.circle.fill",
-                        iconColor: .blue,
+                        iconColor: .appRed,
                         title: "About",
                         description: "App version and information"
                     ) {

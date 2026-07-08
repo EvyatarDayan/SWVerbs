@@ -33,10 +33,11 @@ struct SplitTitleView: View {
         HStack(spacing: 0) {
             Text(firstPart)
                 .font(.system(size: 28, weight: .bold, design: .rounded))
-                .foregroundColor(.blue)
+                .foregroundColor(.appRed)
             Text(secondPart)
                 .font(.system(size: 28, weight: .bold, design: .rounded))
-                .foregroundColor(.blue)
+                .foregroundColor(.appRed)
+
         }
     }
 }

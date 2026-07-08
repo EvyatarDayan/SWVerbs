@@ -14,7 +14,7 @@ struct Temp1View: View {
                 Spacer()
                 Image(systemName: "1.circle.fill")
                     .font(.system(size: 60))
-                    .foregroundColor(.blue)
+                    .foregroundColor(.appRed)
                 Text("Temp1")
                     .font(.title)
                     .fontWeight(.bold)

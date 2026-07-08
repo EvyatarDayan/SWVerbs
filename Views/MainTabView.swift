@@ -130,17 +130,17 @@ struct TabBarButton: View {
                         .renderingMode(.template)
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 20, height: 20)
-                        .foregroundColor(isSelected ? .primary : .secondary)
+                        .foregroundColor(isSelected ? .appRed : .secondary)
                 } else {
                     Image(systemName: icon)
                         .font(.system(size: 20, weight: isSelected ? .semibold : .regular))
-                        .foregroundColor(isSelected ? .primary : .secondary)
+                        .foregroundColor(isSelected ? .appRed : .secondary)
                 }
                 
                 // Text below icon
                 Text(label)
                     .font(.system(size: 10, weight: isSelected ? .semibold : .regular))
-                    .foregroundColor(isSelected ? .primary : .secondary)
+                    .foregroundColor(isSelected ? .appRed : .secondary)
                     .lineLimit(1)
             }
             .frame(maxWidth: .infinity)

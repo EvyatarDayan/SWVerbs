@@ -1,6 +1,6 @@
 //
 //  TestsView.swift
-//  SWVerbs
+//  SW-Verbs
 //
 //  Created by EVYATAR DAYAN on 2026-01-05.
 //
@@ -182,9 +182,10 @@ struct TestRow: View {
             VStack(spacing: 2) {
                 Image("stars")
                     .resizable()
+                    .renderingMode(.template)
                     .scaledToFit()
                     .frame(width: 35, height: 35)
-                    .foregroundColor(.secondary)
+                    .foregroundColor(.appRed)
                 
                 if let percentage = currentTest?.totalScorePercentage ?? test.totalScorePercentage {
                     Text("\(percentage)%")
@@ -206,7 +207,7 @@ struct TestRow: View {
                 Text(test.name)
                     .font(.title3)
                     .fontWeight(.medium)
-                    .foregroundColor(.primary)
+                    .foregroundColor(.appRed)
                     .lineLimit(1)
                     .minimumScaleFactor(0.8)
                 
@@ -222,11 +223,12 @@ struct TestRow: View {
             Button(action: onTap) {
                 Image("play-button")
                     .resizable()
+                    .renderingMode(.template)
                     .scaledToFit()
                     .frame(width: 40, height: 40)
+                    .foregroundColor(.appRed)
                     .padding(.horizontal, 16)
                     .padding(.vertical, 8)
-//                    .background(Color.blue)
                     .cornerRadius(8)
             }
             .padding(.horizontal, -23)
@@ -322,7 +324,7 @@ struct TestDetailView: View {
                                     .foregroundColor(.white)
                                     .frame(maxWidth: .infinity)
                                     .padding(.vertical, 14)
-                                    .background(Color.blue)
+                                    .background(Color.appRed)
                                     .cornerRadius(12)
                             }
                             .padding(.horizontal, 100)
@@ -476,6 +478,7 @@ struct TestVerbRow: View {
             }) {
                 Image("audio-headphone")
                     .resizable()
+                    .renderingMode(.template)
                     .scaledToFit()
                     .frame(width: 28, height: 28)
                     .opacity(isPlaying ? 0.5 : 1.0)
@@ -483,7 +486,7 @@ struct TestVerbRow: View {
                         isPlaying ? Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true) : .default,
                         value: isPlaying
                     )
-                    .foregroundColor(.blue)
+                    .foregroundColor(.appRed)
             }
             .buttonStyle(.plain)
             
@@ -493,7 +496,7 @@ struct TestVerbRow: View {
                 Text(verb.infinitive)
                     .font(.title2)
                     .fontWeight(.medium)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.appRed)
                 
                 if !verb.english.isEmpty && verb.english[0] != "translation" {
                     Text(verb.english.joined(separator: ", "))
@@ -519,9 +522,10 @@ struct TestVerbRow: View {
                 }) {
                     Image("play-button")
                         .resizable()
+                        .renderingMode(.template)
                         .scaledToFit()
                         .frame(width: 37, height: 37)
-                        .foregroundColor(.blue)
+                        .foregroundColor(.appRed)
                 }
                 .buttonStyle(.plain)
             }

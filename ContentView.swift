@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  SWVerbs
+//  SW-Verbs
 //
 //  Created by EVYATAR DAYAN on 2026-01-05.
 //
@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var showLogo = true
-    
+    @AppStorage(WelcomeStorage.skipWelcomeKey) private var skipWelcomeScreen = false
+    @State private var showWelcome = true
+
     var body: some View {
         ZStack {
-            if showLogo {
+            if showWelcome && !skipWelcomeScreen {
                 LogoView {
                     withAnimation {
-                        showLogo = false
+                        showWelcome = false
                     }
                 }
             } else {

@@ -1,6 +1,6 @@
 //
 //  VerbDetailView.swift
-//  SWVerbs
+//  SW-Verbs
 //
 //  Created by EVYATAR DAYAN on 2026-01-05.
 //
@@ -62,7 +62,7 @@ struct VerbDetailView: View {
                             Text(verb.infinitive)
                                 .font(.largeTitle)
                                 .fontWeight(.bold)
-                                .foregroundColor(.blue)
+                                .foregroundColor(.appRed)
                                 .multilineTextAlignment(.center)
                             
                             Button(action: {
@@ -83,6 +83,7 @@ struct VerbDetailView: View {
                             }) {
                                 Image("audio-headphone")
                                     .resizable()
+                                    .renderingMode(.template)
                                     .scaledToFit()
                                     .frame(width: 28, height: 28)
                                     .opacity(isPlayingInfinitive ? 0.5 : 1.0)
@@ -90,7 +91,7 @@ struct VerbDetailView: View {
                                         isPlayingInfinitive ? Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true) : .default,
                                         value: isPlayingInfinitive
                                     )
-                                    .foregroundColor((isTestMode || isPracticeMode) && !hasAnyAnswer ? .gray : .blue)
+                                    .foregroundColor((isTestMode || isPracticeMode) && !hasAnyAnswer ? .gray : .appRed)
                             }
                             .buttonStyle(.plain)
                             .disabled((isTestMode || isPracticeMode) && !hasAnyAnswer)
@@ -241,7 +242,7 @@ struct VerbDetailView: View {
                                 .foregroundColor(.white)
                                 .frame(maxWidth: .infinity)
                                 .padding(.vertical, 14)
-                                .background(Color.blue)
+                                .background(Color.appRed)
                                 .cornerRadius(12)
                         }
                         .padding(.horizontal, 100)
@@ -265,7 +266,7 @@ struct VerbDetailView: View {
                             .renderingMode(.template)
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 20, height: 20)
-                            .foregroundColor(isFavorite ? .blue : .primary)
+                            .foregroundColor(isFavorite ? .appRed : .primary)
                     }
                 }
             }
@@ -510,6 +511,7 @@ struct ExampleCard: View {
                     }) {
                         Image("audio-headphone")
                             .resizable()
+                            .renderingMode(.template)
                             .scaledToFit()
                             .frame(width: 28, height: 28)
                             .opacity(isPlayingSwedish ? 0.5 : 1.0)
@@ -517,7 +519,7 @@ struct ExampleCard: View {
                                 isPlayingSwedish ? Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true) : .default,
                                 value: isPlayingSwedish
                             )
-                            .foregroundColor(isAudioDisabled ? .gray : .blue)
+                            .foregroundColor(isAudioDisabled ? .gray : .appRed)
                     }
                     .buttonStyle(.plain)
                     .disabled(isAudioDisabled)
@@ -631,7 +633,7 @@ struct AnswerInputView: View {
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 12)
-                    .background(inputText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? Color.gray : Color.blue)
+                    .background(inputText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? Color.gray : Color.appRed)
                     .cornerRadius(8)
                     .disabled(inputText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
                 }

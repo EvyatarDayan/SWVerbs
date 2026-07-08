@@ -71,13 +71,13 @@ struct TermsPrivacyView: View {
     
     Last Updated: January 5, 2026
     
-    Welcome to SWVerbs. These Terms of Use ("Terms") govern your access to and use of the SWVerbs mobile application ("App"). By using the App, you agree to be bound by these Terms.
+    Welcome to SW-Verbs. These Terms of Use ("Terms") govern your access to and use of the SW-Verbs mobile application ("App"). By using the App, you agree to be bound by these Terms.
     
     1. ACCEPTANCE OF TERMS
-    By downloading, installing, or using SWVerbs, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy.
+    By downloading, installing, or using SW-Verbs, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy.
     
     2. DESCRIPTION OF SERVICE
-    SWVerbs is a mobile application designed to help users learn Swedish verbs. The App allows users to:
+    SW-Verbs is a mobile application designed to help users learn Swedish verbs. The App allows users to:
     - Search and learn Swedish verbs with translations
     - Practice verb conjugations in present, past, and perfect tenses
     - Test knowledge with interactive quizzes
@@ -95,10 +95,10 @@ struct TermsPrivacyView: View {
     - Use automated systems to access the App
     
     5. INTELLECTUAL PROPERTY
-    The App and its content, including but not limited to text, graphics, logos, and software, are the property of SWVerbs and are protected by copyright and other intellectual property laws.
+    The App and its content, including but not limited to text, graphics, logos, and software, are the property of SW-Verbs and are protected by copyright and other intellectual property laws.
     
     6. LIMITATION OF LIABILITY
-    SWVerbs is provided "as is" without warranties of any kind. We do not guarantee that the App will be error-free or uninterrupted. In no event shall SWVerbs be liable for any indirect, incidental, or consequential damages.
+    SW-Verbs is provided "as is" without warranties of any kind. We do not guarantee that the App will be error-free or uninterrupted. In no event shall SW-Verbs be liable for any indirect, incidental, or consequential damages.
     
     7. MODIFICATIONS TO TERMS
     We reserve the right to modify these Terms at any time. Your continued use of the App after any changes constitutes acceptance of the modified Terms.
@@ -112,10 +112,10 @@ struct TermsPrivacyView: View {
     
     Last Updated: January 5, 2026
     
-    At SWVerbs, we are committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application.
+    At SW-Verbs, we are committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application.
     
     1. NO DATA COLLECTION
-    SWVerbs does not collect, transmit, or store any of your personal information on external servers. We do not collect:
+    SW-Verbs does not collect, transmit, or store any of your personal information on external servers. We do not collect:
     - Usage analytics
     - Device information
     - Location data
@@ -166,13 +166,13 @@ struct TermsPrivacyView: View {
     Last Updated: January 5, 2026
     
     1. NO WARRANTY
-    SWVerbs is provided "as is" and "as available" without any warranties, express or implied. We do not guarantee that the App will be error-free, uninterrupted, or free from defects.
+    SW-Verbs is provided "as is" and "as available" without any warranties, express or implied. We do not guarantee that the App will be error-free, uninterrupted, or free from defects.
     
     2. ACCURACY OF CONTENT
     While we strive to ensure accurate verb conjugations, translations, and content, we cannot guarantee the accuracy of all translations and learning materials. Users are responsible for verifying information and should consult additional resources for comprehensive learning.
     
     3. LIMITATION OF LIABILITY
-    To the fullest extent permitted by law, SWVerbs shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of data or use, arising out of or in connection with the use of the App.
+    To the fullest extent permitted by law, SW-Verbs shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of data or use, arising out of or in connection with the use of the App.
     
     4. USER RESPONSIBILITY
     Users are solely responsible for:
@@ -191,7 +191,7 @@ struct TermsPrivacyView: View {
     The App is for educational and learning purposes only. It does not constitute professional language instruction or certification. Users should consult with qualified language instructors for formal education.
     
     8. ACCEPTANCE
-    By using SWVerbs, you acknowledge that you have read, understood, and agree to this Disclaimer.
+    By using SW-Verbs, you acknowledge that you have read, understood, and agree to this Disclaimer.
     """
 }
 

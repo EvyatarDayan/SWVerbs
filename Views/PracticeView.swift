@@ -142,7 +142,7 @@ struct PracticeView: View {
                                         .foregroundColor(.white)
                                         .frame(maxWidth: .infinity)
                                         .padding(.vertical, 14)
-                                        .background(hasSetAsTest ? Color.gray : Color.blue)
+                                        .background(hasSetAsTest ? Color.gray : Color.appRed)
                                         .cornerRadius(12)
                                 }
                                 .disabled(hasSetAsTest)
@@ -175,7 +175,7 @@ struct PracticeView: View {
                         }) {
                             Image(systemName: "arrow.clockwise")
                                 .font(.system(size: 18))
-                                .foregroundColor(.blue)
+                                .foregroundColor(.appRed)
                         }
                     }
                 }

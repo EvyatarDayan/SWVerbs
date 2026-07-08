@@ -1,6 +1,6 @@
 //
 //  SWVerbsApp.swift
-//  SWVerbs
+//  SW-Verbs
 //
 //  Created by EVYATAR DAYAN on 2026-01-05.
 //
@@ -15,6 +15,7 @@ struct SWVerbsApp: App {
         WindowGroup {
             ContentView()
                 .preferredColorScheme(darkModeEnabled ? .dark : nil)
+                .tint(.appRed)
         }
     }
 }
